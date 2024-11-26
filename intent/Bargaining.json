@@ -1,0 +1,231 @@
+{
+  "id": "9d6c916c-f49e-4e17-9844-376a21f5b2ea",
+  "name": "Bargaining",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "product-inquary"
+  ],
+  "contexts": [
+    "product-inquary"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "bargaining",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "bargain",
+          "dataType": "@bargain",
+          "isList": true,
+          "required": false,
+          "prompts": [],
+          "value": "$bargain",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "product_name",
+          "dataType": "@product_name",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$product_name",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "location",
+          "dataType": "@sys.location",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$location",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "music-artist",
+          "dataType": "@sys.music-artist",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$music-artist",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "\"Let me see if I can offer you a discount or suggest alternatives.\""
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Can you ",
+          "userDefined": false
+        },
+        {
+          "text": "offer",
+          "userDefined": true,
+          "alias": "bargain",
+          "meta": "@bargain"
+        },
+        {
+          "text": " me a ",
+          "userDefined": false
+        },
+        {
+          "text": "better",
+          "userDefined": true,
+          "alias": "bargain",
+          "meta": "@bargain"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "deal",
+          "userDefined": true,
+          "alias": "bargain",
+          "meta": "@bargain"
+        },
+        {
+          "text": " on ",
+          "userDefined": false
+        },
+        {
+          "text": "Mens Cotton Jacket",
+          "userDefined": true,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": "  ?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "e680ca42-308b-4589-a958-200b277b5dd8",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "\"Can you ",
+          "userDefined": false
+        },
+        {
+          "text": "offer",
+          "userDefined": true,
+          "alias": "bargain",
+          "meta": "@bargain"
+        },
+        {
+          "text": " me a better ",
+          "userDefined": false
+        },
+        {
+          "text": "deal",
+          "userDefined": true,
+          "alias": "bargain",
+          "meta": "@bargain"
+        },
+        {
+          "text": "?\"",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "f80f1609-c279-4175-8202-1c52208ec843",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "\"Is this the ",
+          "userDefined": false
+        },
+        {
+          "text": "best price",
+          "userDefined": true,
+          "alias": "bargain",
+          "meta": "@bargain"
+        },
+        {
+          "text": "?\"",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "f178b7a0-eac7-412b-aa80-7b6bcc657aa5",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "\"Can I get a ",
+          "userDefined": false
+        },
+        {
+          "text": "discount",
+          "userDefined": true,
+          "alias": "bargain",
+          "meta": "@bargain"
+        },
+        {
+          "text": "?\"",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "f2576a6c-7d1e-44bb-9160-9c2e0acf9a9d",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

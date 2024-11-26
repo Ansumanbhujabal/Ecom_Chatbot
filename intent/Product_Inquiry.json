@@ -1,0 +1,773 @@
+{
+  "id": "87085a7c-d759-47b8-a06b-704947d944be",
+  "name": "Product_Inquiry",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "product-inquary"
+  ],
+  "contexts": [
+    "product-inquary"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "product",
+      "affectedContexts": [
+        {
+          "name": "product-inquary",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "product_name",
+          "dataType": "@product_name",
+          "isList": true,
+          "required": true,
+          "prompts": [
+            "Please clearly specify the product name"
+          ],
+          "value": "$product_name",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "product",
+          "dataType": "",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "bargain",
+          "dataType": "@bargain",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$bargain",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Here are the details you asked for $product_name",
+            "Sure, Looking for your answers",
+            "\"Yes, we have a wide variety of backpacks. Would you like to know about a specific one?\"",
+            "\"The price of this product starts at $49.99. Would you like more details?\"",
+            "\"Sure, we have T-shirts in various styles and colors. Prices range from $15 to $35.\"",
+            "\"We have jackets for all seasons. Please check our latest collection!\"",
+            "\"Yes, we currently have discounts of up to 20% on men's clothing.\"",
+            "\"In women’s clothing, we offer dresses, tops, jeans, and more. Let me know if you need specific details.\"",
+            "\"We have a range of shoes available for casual, formal, and sportswear. Can I help with a particular type?\"",
+            "\"The backpack you’re looking for is priced at $79.99.\"",
+            "\"Premium T-shirts cost between $25 and $50 depending on the brand.\"",
+            "\"We offer the latest gadgets, including smartphones, laptops, and accessories. What are you looking for?\"",
+            "\"Yes, this product is in stock and available for purchase.\"",
+            "\"We carry brands like Nike, Adidas, Levi’s, and more. Do you prefer a particular brand?\"",
+            "\"Yes, there are deals on jackets, including up to 30% off selected items.\"",
+            "\"We offer furniture for your living room, bedroom, and office. Any specific type you’d like to explore?\"",
+            "\"Watches start at $49 and go up to $300, depending on the model and brand.\"",
+            "\"Yes, we have slim-fit jeans in various sizes. Would you like a specific color or brand?\"",
+            "\"Our latest arrivals include trendy jackets, shoes, and accessories. Check them out on our website.\"",
+            "\"We have cotton jackets available starting from $89. Would you like to see more details?\"",
+            "\"This $product_name is available in red, blue, and black. Which color do you prefer?\"",
+            "\"Yes, free shipping is available for orders over $50.\""
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Product",
+          "userDefined": false,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": " query",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "cd491080-f299-40cc-821f-623d70a1f9f2",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Is there free shipping ",
+          "userDefined": false
+        },
+        {
+          "text": "on",
+          "userDefined": false,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": " this item?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "b2a5eb26-d961-49f2-afc1-167f2acb6c89",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What ",
+          "userDefined": false
+        },
+        {
+          "text": "colors",
+          "userDefined": false,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": " are available for this product?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "765d80ec-fc45-4205-a353-5c4d00e326dd",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Can I get a ",
+          "userDefined": false
+        },
+        {
+          "text": "cotton jacket",
+          "userDefined": false,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "66357419-72cf-4466-a514-72517ad61073",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Tell me more ",
+          "userDefined": false
+        },
+        {
+          "text": "about",
+          "userDefined": false,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": " your latest ",
+          "userDefined": false
+        },
+        {
+          "text": "arrivals",
+          "userDefined": false,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": ".",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "bd9bfa41-2702-492b-aafa-bedcc5f1c03d",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Do you have ",
+          "userDefined": false
+        },
+        {
+          "text": "slim-fit jeans",
+          "userDefined": true,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "83cf1c56-9308-45dc-835b-170a919833dc",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What's the price range for ",
+          "userDefined": false
+        },
+        {
+          "text": "watches",
+          "userDefined": true,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "9a1d8914-cf4e-464d-aa97-9305673cc82f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Can you show me some ",
+          "userDefined": false
+        },
+        {
+          "text": "furniture",
+          "userDefined": true,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "f4e8d443-8248-4d8a-84cd-5fc5ac83bf1e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Are there any ",
+          "userDefined": false
+        },
+        {
+          "text": "deals",
+          "userDefined": false,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": " on ",
+          "userDefined": false
+        },
+        {
+          "text": "jackets",
+          "userDefined": true,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "f4acb859-1b8a-4e41-8aa6-cc70b6a1d3d0",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What",
+          "userDefined": false,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": " brands do you ",
+          "userDefined": false
+        },
+        {
+          "text": "offer",
+          "userDefined": false,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "6a7a3a8a-20d3-4500-bd06-bdd3b5f768ed",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Is this product in ",
+          "userDefined": false
+        },
+        {
+          "text": "stock",
+          "userDefined": false,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "f198261a-281b-452b-aaac-154fe258e56c",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Show",
+          "userDefined": false,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": " me ",
+          "userDefined": false
+        },
+        {
+          "text": "electronics",
+          "userDefined": false,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": ".",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "6dc9b605-05c3-4283-8dd6-e4aa5f52ab9e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What",
+          "userDefined": false,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": " is the ",
+          "userDefined": false
+        },
+        {
+          "text": "cost",
+          "userDefined": true,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": " of ",
+          "userDefined": false
+        },
+        {
+          "text": "premium T-shirts",
+          "userDefined": false,
+          "alias": "product_name",
+          "meta": "@product_name"
+        }
+      ],
+      "count": 0,
+      "id": "140d6b77-c255-49af-8cfe-7ec0d5d82b10",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Tell me the ",
+          "userDefined": false
+        },
+        {
+          "text": "price of",
+          "userDefined": false,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": " the ",
+          "userDefined": false
+        },
+        {
+          "text": "backpack",
+          "userDefined": false,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": ".",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "89bb1c9b-bb75-4cf5-804c-b30a874f7084",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I need information about ",
+          "userDefined": false
+        },
+        {
+          "text": "shoes",
+          "userDefined": false,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": ".",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "e08e3e41-12fb-43d5-a429-b488452a9096",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What",
+          "userDefined": false,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": "'s available in ",
+          "userDefined": false
+        },
+        {
+          "text": "women's clothing",
+          "userDefined": false,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "75ddaefb-ce82-494f-ae0c-3e53c4a3a30a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Are there any ",
+          "userDefined": false
+        },
+        {
+          "text": "discounts",
+          "userDefined": true,
+          "alias": "bargain",
+          "meta": "@bargain"
+        },
+        {
+          "text": " on ",
+          "userDefined": false
+        },
+        {
+          "text": "men's clothing",
+          "userDefined": false,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "6d2a3ca3-baee-460c-914b-a5c76b63d4af",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Show",
+          "userDefined": false,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": " me ",
+          "userDefined": false
+        },
+        {
+          "text": "jackets",
+          "userDefined": false,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": ".",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "eca68294-2cd2-4002-92bd-9cc43fa127be",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Can I get details about ",
+          "userDefined": false
+        },
+        {
+          "text": "T-shirts",
+          "userDefined": false,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "1f3aaa6e-fa77-4539-bff6-afa58311c562",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What",
+          "userDefined": false,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": "'s the ",
+          "userDefined": false
+        },
+        {
+          "text": "price of",
+          "userDefined": false,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": " this ",
+          "userDefined": false
+        },
+        {
+          "text": "product",
+          "userDefined": true,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "07543596-57d7-41ef-9580-205bbab0e270",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Do you have ",
+          "userDefined": false
+        },
+        {
+          "text": "backpacks",
+          "userDefined": false,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "53bad442-6010-4b21-82bc-7464699f4531",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Tell me about ",
+          "userDefined": false
+        },
+        {
+          "text": "Fjallraven Backpack",
+          "userDefined": true,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": ".",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "005ff4a0-b054-4c07-9b6c-8bcefead92ea",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Do you have ",
+          "userDefined": false
+        },
+        {
+          "text": "Mens Cotton Jacket",
+          "userDefined": true,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "fbc768d3-c609-4ae7-9f13-88bad6f67add",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": " \"Is product ",
+          "userDefined": false
+        },
+        {
+          "text": "Z",
+          "userDefined": true,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": " available?\"",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "387d2145-3a4b-42af-af9f-68a9e53b064d",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "\"How much does product ",
+          "userDefined": false
+        },
+        {
+          "text": "Y",
+          "userDefined": true,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": " cost?\"",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "8fce4d9f-2f1d-46f0-8150-d01b4f26e01d",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "\"Tell me about product ",
+          "userDefined": false
+        },
+        {
+          "text": "X",
+          "userDefined": true,
+          "alias": "product_name",
+          "meta": "@product_name"
+        },
+        {
+          "text": ".\"",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "56906afd-41f4-4013-a40c-ef1981467ce9",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}
